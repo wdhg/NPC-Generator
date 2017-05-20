@@ -25,10 +25,8 @@ class Generator(object):
             'race': race,
             'gender': gender,
             'alignment': [moral, ethic],
-            'name': [
-                choice(self.data['names'][race][gender]),
-                choice(self.data['names'][race]['othername'])
-            ],
+            'forename': choice(self.data['names'][race][gender]),
+            'othername': choice(self.data['names'][race]['othername']),
             'apperance': choice(self.data['apperances']),
             'abilities': None,
             'talent': choice(self.data['talents']),
