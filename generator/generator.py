@@ -13,9 +13,6 @@ class Generator(object):
             race = choice(self.data['races'])
         if gender == None:
             gender = choice(self.data['genders'])
-        if race not in self.data['races'] or gender not in self.data['genders']:
-            return None
-
         if moral == None:
             moral = choice(self.data['morals'])
         if ethic == None:
