@@ -1,6 +1,5 @@
 import json
 from random import choice
-from .name import generate_name
 
 DATA_FILE_PATH = 'generator/data/data.json'
 
